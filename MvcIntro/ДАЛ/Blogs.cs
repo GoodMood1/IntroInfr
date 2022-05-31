@@ -36,7 +36,6 @@ namespace MvcIntro.DAL
 
                 using (var db = new Entities())
                 {
-                    //TODO: Think about optimization
                     var searchResults = db.Users.Where(u => u.UserName == userName);
 
                     if (searchResults.Any())
